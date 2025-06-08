@@ -5,11 +5,7 @@ const app = express()
 const cors = require("cors")
 const {PORT , FRONTEND_URL} = require("./config/serverConfig")
 app.use(cors({
-<<<<<<< HEAD
-    origin: "http://localhost:5173",
-=======
     origin: FRONTEND_URL,
->>>>>>> 5024cab (Updated Backend)
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"]
 }));
